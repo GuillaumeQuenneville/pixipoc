@@ -1,0 +1,10 @@
+[package]
+name = "pixipoc"
+version = "2.1.0"
+build = { backend = { name = "pixi-build-python", version = ">=0.4.2" } }
+
+[package.host-dependencies]
+hatchling = "*"
+
+[package.run-dependencies]
+python = ">=3.13"
