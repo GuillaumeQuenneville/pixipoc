@@ -10,6 +10,16 @@ preview = ["pixi-build"]
 
 [tasks]
 
-[dependencies]
-pixipoc = { path = "pixipoc" }
-subpkg = { path = "subpkg" }
+[dev]
+pixipoc = { path = "." }
+
+
+[package]
+name = "pixipoc"
+version = "0.1.0"
+
+[package.build]
+backend = { name = "pixi-build-python", version = ">=0.4.2" }
+
+[package.build.config]
+compilers = ["cxx"]
